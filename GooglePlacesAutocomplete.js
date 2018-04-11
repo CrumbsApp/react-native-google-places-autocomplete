@@ -239,7 +239,7 @@ export default class GooglePlacesAutocomplete extends Component {
               this._onBlur();
 
               this.setState({
-                text: this._renderDescription( rowData.name ),
+                text: rowData.name,
               });
 
               delete rowData.isLoading;
